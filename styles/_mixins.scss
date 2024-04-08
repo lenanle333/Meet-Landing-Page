@@ -65,6 +65,7 @@
 @mixin primary-btn {
 	@include flex-center();
 	@include body();
+	font-size: rem(16);
 	cursor: pointer;
 	font-weight: 900;
 	border-radius: rem(29);
@@ -84,6 +85,7 @@
 @mixin secondary-btn {
 	@include flex-center();
 	@include body();
+	font-size: rem(16);
 	cursor: pointer;
 	font-weight: 900;
 	border-radius: rem(29);
