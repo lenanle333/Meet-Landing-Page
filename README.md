@@ -18,4 +18,4 @@ A responsive landing page created with HTML and Sass. This project showcases my 
 
 ## Disclaimer
 
-Website design from [Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
+Website design from [Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR/hub)
