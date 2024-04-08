@@ -1,0 +1,514 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url(/assets/fonts/RedHatDisplay/RedHatDisplay-VariableFont_wght.ttf);
+}
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header #logo {
+  padding: 3rem 0 3.375rem 0;
+}
+@media (min-width: 768px) {
+  header #logo {
+    padding: 3rem 0 4rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  header #logo {
+    padding: 5rem 0 3.8125rem 0;
+  }
+}
+header #hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+header #hero #hero-banner {
+  overflow: hidden;
+  white-space: nowrap;
+}
+header #hero #hero-banner img {
+  height: 9.5625rem;
+}
+header #hero h1 {
+  font-weight: 900;
+  color: hsl(240, 21%, 20%);
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  width: 18.125rem;
+}
+@media (min-width: 768px) {
+  header #hero h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  header #hero h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+header #hero p {
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  margin: 0 0 2rem;
+  width: 20.3125rem;
+}
+@media (min-width: 1440px) {
+  header #hero p {
+    font-size: 1.125rem;
+  }
+}
+header #hero #cta-btns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header #hero #cta-btns .primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 1.8125rem;
+  width: 12.0625rem;
+  height: 3.625rem;
+  background-color: hsl(192, 37%, 48%);
+  color: hsl(0, 0%, 98%);
+  margin-bottom: 1rem;
+}
+@media (min-width: 1440px) {
+  header #hero #cta-btns .primary-btn {
+    font-size: 1.125rem;
+  }
+}
+header #hero #cta-btns .primary-btn span {
+  margin-left: 0.25rem;
+  color: hsl(192, 90%, 77%);
+}
+header #hero #cta-btns .primary-btn:hover {
+  background-color: hsl(192, 54%, 64%);
+}
+header #hero #cta-btns #secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 1.8125rem;
+  width: 8.6875rem;
+  height: 3.625rem;
+  background-color: hsl(268, 34%, 53%);
+  color: hsl(0, 0%, 98%);
+}
+@media (min-width: 1440px) {
+  header #hero #cta-btns #secondary-btn {
+    font-size: 1.125rem;
+  }
+}
+header #hero #cta-btns #secondary-btn:hover {
+  background-color: hsl(267, 54%, 71%);
+}
+@media (min-width: 768px) {
+  header #hero #hero-banner img {
+    height: 18.9375rem;
+  }
+  header #hero h1 {
+    margin: 4.5rem 0 1.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 21.25rem;
+  }
+  header #hero p {
+    width: 28.75rem;
+  }
+  header #hero #cta-btns {
+    flex-direction: row;
+  }
+  header #hero #cta-btns .primary-btn {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  header #hero {
+    width: 100%;
+    position: relative;
+  }
+  header #hero img {
+    position: absolute;
+  }
+  header #hero #hero-left {
+    left: -1.875rem;
+  }
+  header #hero #hero-right {
+    right: -1.875rem;
+    bottom: 0;
+  }
+  header #hero h1 {
+    margin: 2.9375rem 0 2.125rem;
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 27.8125rem;
+  }
+  header #hero p {
+    width: 33.75rem;
+  }
+}
+
+main {
+  transition: all 500ms ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+main #line-divider-1 {
+  border-left: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
+  height: 5.25rem;
+}
+main #divider-num-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  font-weight: 900;
+  color: hsl(240, 10%, 57%);
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1440px) {
+  main #divider-num-1 {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  main #divider-num-1 {
+    margin-bottom: 4.1875rem;
+  }
+}
+@media (min-width: 1440px) {
+  main #divider-num-1 {
+    margin-bottom: 4rem;
+  }
+}
+main #features-overview {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+main #features-overview #grid-container {
+  display: grid;
+  row-gap: 1.5rem;
+  column-gap: 1.5625rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+main #features-overview #grid-container img {
+  width: 9.4375rem;
+  height: 8.9375rem;
+  border-radius: 0.5rem;
+}
+main #features-overview h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(192, 37%, 48%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.25rem;
+  margin: 4rem 0 1.5rem;
+}
+main #features-overview h3 {
+  font-weight: 900;
+  color: hsl(240, 21%, 20%);
+  font-size: 2rem;
+  line-height: 2.25rem;
+  text-align: center;
+  width: 20.4375rem;
+}
+@media (min-width: 768px) {
+  main #features-overview h3 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+main #features-overview p {
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  width: 20.4375rem;
+  margin: 2rem 0 0;
+}
+@media (min-width: 1440px) {
+  main #features-overview p {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  main #features-overview {
+    margin-bottom: 5rem;
+  }
+  main #features-overview #grid-container {
+    display: grid;
+    column-gap: 0.6875rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  main #features-overview #grid-container img {
+    width: 10.25rem;
+    height: 9.75rem;
+    border-radius: 0.5rem;
+  }
+  main #features-overview h2 {
+    margin: 3rem 0 1rem;
+  }
+  main #features-overview h3 {
+    width: 27.8125rem;
+  }
+  main #features-overview p {
+    width: 35.8125rem;
+    margin: 2rem 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  main #features-overview {
+    margin-bottom: 4.5rem;
+  }
+  main #features-overview #grid-container {
+    display: grid;
+    column-gap: 1.875rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  main #features-overview #grid-container img {
+    width: 15.9375rem;
+    height: 15.125rem;
+    border-radius: 0.5rem;
+  }
+  main #features-overview h2 {
+    margin: 5rem 0 1rem;
+  }
+  main #features-overview h3 {
+    width: 27.8125rem;
+  }
+  main #features-overview p {
+    width: 32.5rem;
+    margin: 2rem 0 0;
+  }
+}
+main #line-divider-2 {
+  border-left: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
+  height: 5.25rem;
+}
+main #divider-num-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  font-weight: 900;
+  color: hsl(240, 10%, 57%);
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
+  border-radius: 50%;
+  z-index: 1;
+  background-color: hsl(0, 0%, 98%);
+}
+@media (min-width: 1440px) {
+  main #divider-num-2 {
+    font-size: 1.125rem;
+  }
+}
+main #call-to-action {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -30px;
+  position: relative;
+  width: 100vw;
+  height: 26.75rem;
+  background-color: hsl(192, 37%, 48%);
+}
+main #call-to-action picture img {
+  z-index: 0;
+  opacity: 10.45%;
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 26.75rem;
+  left: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: 0 0;
+}
+main #call-to-action h2 {
+  margin-top: 5.75rem;
+  z-index: 1;
+  font-weight: 900;
+  color: hsl(240, 21%, 20%);
+  font-size: 2rem;
+  line-height: 2.25rem;
+  text-align: center;
+  width: 20.4375rem;
+  color: hsl(0, 0%, 98%);
+}
+@media (min-width: 768px) {
+  main #call-to-action h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+main #call-to-action p {
+  z-index: 1;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  width: 18.125rem;
+  color: hsl(0, 0%, 98%);
+  margin: 1.5rem 0 2rem;
+}
+@media (min-width: 1440px) {
+  main #call-to-action p {
+    font-size: 1.125rem;
+  }
+}
+main #call-to-action .primary-btn {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 1.8125rem;
+  width: 12.0625rem;
+  height: 3.625rem;
+  background-color: hsl(192, 37%, 48%);
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(268, 34%, 53%);
+}
+@media (min-width: 1440px) {
+  main #call-to-action .primary-btn {
+    font-size: 1.125rem;
+  }
+}
+main #call-to-action .primary-btn span {
+  margin-left: 0.25rem;
+  color: hsl(192, 90%, 77%);
+}
+main #call-to-action .primary-btn:hover {
+  background-color: hsl(192, 54%, 64%);
+}
+main #call-to-action .primary-btn span {
+  color: hsl(268, 100%, 86%);
+}
+main #call-to-action .primary-btn:hover {
+  background-color: hsl(267, 54%, 71%);
+}
+@media (min-width: 768px) {
+  main #call-to-action h2 {
+    width: 28.5625rem;
+  }
+  main #call-to-action p {
+    width: 31.25rem;
+    margin: 2rem 0 2.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  main #call-to-action {
+    height: 19.25rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main #call-to-action h2 {
+    width: 21.875rem;
+    margin-top: 0;
+    text-align: left;
+  }
+  main #call-to-action p {
+    width: 21.875rem;
+    text-align: left;
+    margin: 0 5.75rem 0 7.8125rem;
+  }
+  main #call-to-action picture img {
+    height: 19.25rem;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    margin-top: 6.875rem;
+  }
+}/*# sourceMappingURL=index.css.map */

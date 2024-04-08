@@ -1,0 +1,294 @@
+@import "mixins";
+@import "variables";
+@import "reset";
+
+body {
+	font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+	@include flex-h-center();
+	#logo {
+		padding: rem(48) 0 rem(54) 0;
+		@include tablet {
+			padding: rem(48) 0 rem(64) 0;
+		}
+		@include desktop {
+			padding: rem(80) 0 rem(61) 0;
+		}
+	}
+
+	#hero {
+		@include flex-h-center();
+		width: 100%;
+
+		#hero-banner {
+			overflow: hidden;
+			white-space: nowrap;
+			img {
+				height: rem(153);
+			}
+		}
+
+		h1 {
+			@include h1();
+			margin: rem(48) 0 rem(24);
+
+			width: rem(290);
+		}
+		p {
+			@include body();
+			margin: 0 0 rem(32);
+
+			width: rem(325);
+		}
+		#cta-btns {
+			@include flex-h-center();
+
+			.primary-btn {
+				@include primary-btn();
+				margin-bottom: rem(16);
+			}
+			#secondary-btn {
+				@include secondary-btn();
+			}
+		}
+		@include tablet {
+			#hero-banner {
+				img {
+					height: rem(303);
+				}
+			}
+
+			h1 {
+				margin: rem(72) 0 rem(24);
+				font-size: rem(48);
+				line-height: rem(48);
+				width: rem(340);
+			}
+			p {
+				width: rem(460);
+			}
+			#cta-btns {
+				flex-direction: row;
+				.primary-btn {
+					margin-bottom: 0;
+					margin-right: rem(16);
+				}
+			}
+		}
+		@include desktop {
+			width: 100%;
+			position: relative;
+			img {
+				position: absolute;
+			}
+			#hero-left {
+				left: rem(-30);
+			}
+			#hero-right {
+				right: rem(-30);
+				bottom: 0;
+			}
+			h1 {
+				margin: rem(47) 0 rem(34);
+				font-size: rem(64);
+				line-height: rem(64);
+				width: rem(445);
+			}
+			p {
+				width: rem(540);
+			}
+		}
+	}
+}
+
+main {
+	transition: all 500ms ease;
+	@include flex-h-center();
+	margin-top: rem(64);
+
+	#line-divider-1 {
+		@include line-divider();
+	}
+	#divider-num-1 {
+		@include divider-num();
+		margin-bottom: rem(64);
+		@include tablet() {
+			margin-bottom: rem(67);
+		}
+		@include desktop() {
+			margin-bottom: rem(64);
+		}
+	}
+	#features-overview {
+		@include flex-h-center();
+		margin-bottom: rem(64);
+		#grid-container {
+			display: grid;
+			row-gap: rem(24);
+			column-gap: rem(25);
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			img {
+				width: rem(151);
+				height: rem(143);
+				border-radius: rem(8);
+			}
+		}
+		h2 {
+			@include overline();
+			margin: rem(64) 0 rem(24);
+		}
+		h3 {
+			@include h2();
+			width: rem(327);
+		}
+		p {
+			@include body();
+			width: rem(327);
+			margin: rem(32) 0 0;
+		}
+		@include tablet {
+			margin-bottom: rem(80);
+			#grid-container {
+				display: grid;
+				column-gap: rem(11);
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: 1fr;
+
+				img {
+					width: rem(164);
+					height: rem(156);
+					border-radius: rem(8);
+				}
+			}
+			h2 {
+				margin: rem(48) 0 rem(16);
+			}
+			h3 {
+				width: rem(445);
+			}
+			p {
+				width: rem(573);
+				margin: rem(32) 0 0;
+			}
+		}
+		@include desktop {
+			margin-bottom: rem(72);
+			#grid-container {
+				display: grid;
+				column-gap: rem(30);
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: 1fr;
+
+				img {
+					width: rem(255);
+					height: rem(242);
+					border-radius: rem(8);
+				}
+			}
+			h2 {
+				margin: rem(80) 0 rem(16);
+			}
+			h3 {
+				width: rem(445);
+			}
+			p {
+				width: rem(520);
+				margin: rem(32) 0 0;
+			}
+		}
+	}
+	#line-divider-2 {
+		@include line-divider();
+	}
+	#divider-num-2 {
+		@include divider-num();
+		z-index: 1;
+		background-color: $primary-white;
+	}
+	#call-to-action {
+		@include flex-h-center();
+		margin-top: -30px;
+		position: relative;
+		width: 100vw;
+		height: rem(428);
+		background-color: $primary-blue;
+
+		picture {
+			img {
+				z-index: 0;
+				opacity: 10.45%;
+				position: absolute;
+				display: block;
+				width: 100vw;
+				height: rem(428);
+				left: 0;
+				bottom: 0;
+				object-fit: cover;
+				object-position: 0 0;
+			}
+		}
+		h2 {
+			margin-top: rem(92);
+			z-index: 1;
+			@include h2();
+			width: rem(327);
+			color: $primary-white;
+		}
+		p {
+			z-index: 1;
+			@include body();
+			width: rem(290);
+			color: $primary-white;
+			margin: rem(24) 0 rem(32);
+		}
+		.primary-btn {
+			z-index: 1;
+			@include primary-btn();
+			background-color: $primary-purple;
+			span {
+				color: $secondary-purple;
+			}
+			&:hover {
+				background-color: $hover-purple;
+			}
+		}
+		@include tablet {
+			h2 {
+				width: rem(457);
+			}
+			p {
+				width: rem(500);
+				margin: rem(32) 0 rem(40);
+			}
+		}
+		@include desktop {
+			height: rem(308);
+			flex-direction: row;
+			justify-content: center;
+			h2 {
+				width: rem(350);
+				margin-top: 0;
+				text-align: left;
+			}
+			p {
+				width: rem(350);
+				text-align: left;
+				margin: 0 rem(92) 0 rem(125);
+			}
+			picture {
+				img {
+					height: rem(308);
+				}
+			}
+		}
+	}
+	@include tablet {
+		margin-top: rem(80);
+	}
+	@include desktop {
+		margin-top: rem(110);
+	}
+}

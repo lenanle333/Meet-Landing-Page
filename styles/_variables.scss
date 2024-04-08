@@ -1,0 +1,19 @@
+// Font styles
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(/assets/fonts/RedHatDisplay/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+// Color styles
+$primary-blue: hsl(192, 37%, 48%);
+$primary-purple: hsl(268, 34%, 53%);
+$primary-black: hsl(240, 21%, 20%);
+$primary-gray: hsl(240, 10%, 57%);
+$primary-white: hsl(0, 0%, 98%);
+
+$secondary-blue: hsl(192, 90%, 77%);
+$secondary-purple: hsl(268, 100%, 86%);
+$secondary-gray: hsl(240, 10%, 57%, 25%);
+
+$hover-blue: hsl(192, 54%, 64%);
+$hover-purple: hsl(267, 54%, 71%);
