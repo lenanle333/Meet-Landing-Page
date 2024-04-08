@@ -29,6 +29,7 @@ button {
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(0, 0%, 98%);
 }
 
 header {
@@ -111,6 +112,7 @@ header #hero #cta-btns .primary-btn {
   font-size: 1rem;
   line-height: 1.625rem;
   text-align: center;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: 900;
   border-radius: 1.8125rem;
@@ -141,6 +143,7 @@ header #hero #cta-btns #secondary-btn {
   font-size: 1rem;
   line-height: 1.625rem;
   text-align: center;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: 900;
   border-radius: 1.8125rem;
@@ -446,6 +449,7 @@ main #call-to-action .primary-btn {
   font-size: 1rem;
   line-height: 1.625rem;
   text-align: center;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: 900;
   border-radius: 1.8125rem;

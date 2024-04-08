@@ -4,6 +4,7 @@
 
 body {
 	font-family: "Red Hat Display", sans-serif;
+	background-color: $primary-white;
 }
 
 header {
@@ -39,7 +40,6 @@ header {
 		p {
 			@include body();
 			margin: 0 0 rem(32);
-
 			width: rem(325);
 		}
 		#cta-btns {
